@@ -1,0 +1,80 @@
+# Intune Endpoint Management & Conditional Access Project
+
+## Project Overview
+This project simulates **real-world IT Support / System Administrator tasks** using Microsoft Intune, Entra ID, and Azure. The goal is to demonstrate how to onboard users, manage devices, deploy applications, enforce compliance, and implement security policies in a corporate environment.
+
+**Key Objectives:**
+- Onboard a new employee (Navya Sruthi) in Microsoft 365.
+- Enroll devices into Intune for management.
+- Configure compliance and security policies.
+- Deploy Microsoft 365 Apps (Teams, Outlook, Word, Excel).
+- Create Conditional Access policies for secure access.
+
+---
+
+## Step 1: User & Group Creation
+- **User:** Navya Sruthi
+- **Group:** Sales Department and intune test user group
+- Added Navya to Sales Department group in Entra ID.
+- **Screenshot:** `screenshots/User_Group_Creation.png`
+
+---
+
+## Step 2: Device Enrollment
+- **Device:** Azure VM (Windows 10 Pro) enrolled in Intune.
+- Connected the device to Entra ID for management.
+- **Screenshot:** `screenshots/Device_Enrollment.png`
+
+---
+
+## Step 3: Compliance Policy
+- Created a compliance policy to ensure devices meet security standards:
+  - Password required
+  - BitLocker encryption
+  - Windows Defender enabled
+- Device status: **Compliant**
+- **Screenshot:** `screenshots/Compliance_Policy.png`
+
+---
+
+## Step 4: Device Configuration Profiles
+- Configured security and device settings:
+  - USB storage blocked
+  - Windows Firewall enabled
+  - Microsoft Defender Application Guard
+- Applied to Sales Department group.
+- **Screenshot:** `screenshots/Device_Config.png`
+
+---
+
+## Step 5: App Deployment
+- Deployed Microsoft 365 Apps to the enrolled VM:
+  - Teams, Outlook, Word, Excel
+- Verified installation on VM.
+- **Screenshot:** `screenshots/App_Deployment.png`
+
+---
+
+## Step 6: Conditional Access Policy
+- Created a policy to enforce **multi-factor authentication (MFA)** for Sales Department.
+- Restricted access to Microsoft 365 apps unless device is compliant.
+- **Screenshot:** `screenshots/Conditional_Access.png`
+
+---
+
+## Step 7: Testing & Observations
+- Azure VM shows deployed apps and compliance.
+- Policy enforcement can be tested on physical devices or other tenant devices.
+- **Observations / Notes:** `notes/Observations.txt`
+
+---
+
+## Step 8: Real-World Relevance
+- Demonstrates end-to-end **user onboarding**.
+- Shows **device management**, **policy enforcement**, and **security compliance**.
+- Illustrates how IT admins support business operations while ensuring **data security**.
+- Ideal for showcasing in GitHub / LinkedIn portfolio for IT Support or System Admin roles.
+
+---
+
+### Folder Structure
